@@ -1,6 +1,6 @@
 ---
 title: Home
-description: Find answers about your workspace, integrations, product guides, and policies—all in one place.
+description: Guides and answers for Borradh — getting set up, your connected channels, and how the product works.
 mode: custom
 ---
 
@@ -11,8 +11,8 @@ mode: custom
         How can we help?
       </h1>
       <p className="text-center text-balance text-base text-gray-600 dark:text-gray-400 mt-2">
-        Search the Help Center for setup guides, product how-tos, automation tips, and policies—all in one
-        place.
+        Setup guides and answers for getting Borradh working with your Facebook,
+        Instagram and WhatsApp accounts.
       </p>
     </div>
 
@@ -55,154 +55,31 @@ mode: custom
           <span className="whitespace-nowrap text-gray-500 dark:text-white/50">Ask AI</span>
         </button>
       </div>
-
-      <div className="flex flex-wrap items-center justify-center gap-3 text-sm text-gray-500 dark:text-gray-400">
-        <span>Popular searches</span>
-        <div className="flex flex-wrap justify-center gap-1">
-          {['integrations', 'workspace', 'billing'].map((term) => (
-            <button
-              key={term}
-              type="button"
-              data-popular-search
-              data-term={term}
-              className="rounded-md bg-gray-100 px-1.5 py-1 font-mono text-xs font-bold uppercase tracking-tight text-gray-600 transition hover:bg-gray-200 dark:bg-white/10 dark:text-gray-300 dark:hover:bg-white/15"
-            >
-              {term.toUpperCase()}
-            </button>
-          ))}
-        </div>
-      </div>
     </div>
   </div>
 
   <div className="flex flex-col gap-4">
-    <h3 className="text-base font-medium text-gray-900 dark:text-gray-50">Featured guides</h3>
-    <Columns cols={3}>
+    <h3 className="text-base font-medium text-gray-900 dark:text-gray-50">Start here</h3>
+    <Columns cols={2}>
       <Card
         horizontal
-        icon="rocket"
+        icon="key"
         iconType="light"
-        title="Getting started & account"
-        href="/getting-started"
+        title="Assigning Borradh access"
+        href="/onboarding/assign-access"
       >
-        Account setup, workspace, billing, and integrations
+        Give Borradh permission to manage your Facebook Page, Instagram account,
+        ad account and WhatsApp number.
       </Card>
-      <Card horizontal icon="book-open" iconType="light" title="Product guides" href="/product">
-        Interface, projects, editor, automation, and workflows
-      </Card>
-      <Card horizontal icon="life-buoy" iconType="light" title="Support & policies" href="/support">
-        Help, status, troubleshooting, data, and policies
+      <Card
+        horizontal
+        icon="life-buoy"
+        iconType="light"
+        title="Talk to us"
+        href="mailto:support@borradh.io"
+      >
+        Email support@borradh.io and we will come back to you.
       </Card>
     </Columns>
   </div>
-
-  ---
-
-  <div className="flex flex-col gap-4">
-    <h3 className="text-base font-medium text-gray-900 dark:text-gray-50">All guides</h3>
-    <Columns cols={3}>
-    <Card
-      title="Workspace"
-      icon="users"
-      iconType="light"
-      href="/getting-started/workspace"
-      cta="3 articles"
-    >
-      Invites, roles, and organization settings
-    </Card>
-    <Card
-      title="Billing & plans"
-      icon="credit-card"
-      iconType="light"
-      href="/getting-started/billing"
-      cta="3 articles"
-    >
-      Compare plans, upgrades, and invoices
-    </Card>
-    <Card
-      title="Developer integrations"
-      icon="code-xml"
-      iconType="light"
-      href="/getting-started/integrations/developer"
-      cta="3 articles"
-    >
-      OAuth apps, webhooks, and API keys
-    </Card>
-    <Card
-      title="Projects"
-      icon="folder-kanban"
-      iconType="light"
-      href="/product/projects"
-      cta="2 articles"
-    >
-      Create projects and archive or restore them
-    </Card>
-    <Card
-      title="Troubleshooting"
-      icon="wrench"
-      iconType="light"
-      href="/support/troubleshooting"
-      cta="2 articles"
-    >
-      Login issues and performance troubleshooting
-    </Card>
-    <Card
-      title="Legal & compliance"
-      icon="scale"
-      iconType="light"
-      href="/support/legal"
-      cta="7 articles"
-    >
-      Terms of service, privacy & GDPR, and regional specifics
-    </Card>
-    </Columns>
-  </div>
-
-  ---
-
-  <div className="flex flex-col gap-2">
-    <h3 className="text-base font-medium text-gray-900 dark:text-gray-50">Suggested articles</h3>
-    <p className="text-base text-gray-600 dark:text-gray-400">
-      Popular starting points from the Help Center
-    </p>
-  </div>
-
-  <Columns cols={2} className="suggested-articles">
-    <Card
-      title="Quickstart: get set up in under 15 minutes"
-      icon="timer"
-      iconType="light"
-      href="/getting-started/quickstart"
-      cta="Read article"
-    >
-      A fast path from signup to first project: invites, roles, and your first integration.
-    </Card>
-    <Card
-      title="Conditions and branches"
-      icon="git-branch"
-      iconType="light"
-      href="/product/automation/workflows/conditions-branches"
-      cta="Read article"
-    >
-      Model conditional paths and merge strategies in workflows.
-    </Card>
-    <Card
-      title="Privacy policy"
-      icon="scroll-text"
-      iconType="light"
-      href="/support/legal/privacy/privacy-policy"
-      cta="Read article"
-    >
-      Demo privacy policy for this help center.
-    </Card>
-    <Card
-      title="Connect your CRM"
-      icon="building-2"
-      iconType="light"
-      href="/getting-started/integrations/connect-crm"
-      cta="Read article"
-    >
-      Link Salesforce or HubSpot through partner connectors or a custom sync strategy.
-    </Card>
-  </Columns>
 </div>
