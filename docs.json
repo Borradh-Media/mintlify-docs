@@ -4,11 +4,11 @@
   "name": "Borradh Help Centre",
   "description": "Guides and support for Borradh \u2014 setup, your connected channels, and how the product works.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#4ADE80",
-    "dark": "#15803D"
+    "primary": "#1447E6",
+    "light": "#6E9FFF",
+    "dark": "#0F38B8"
   },
-  "favicon": "/favicon.ico",
+  "favicon": "/favicon.svg",
   "icons": {
     "library": "lucide"
   },
@@ -41,7 +41,8 @@
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "/"
   },
   "navbar": {
     "links": [
@@ -55,5 +56,40 @@
       "label": "Dashboard",
       "href": "https://app.borradh.io"
     }
+  },
+  "fonts": {
+    "family": "Inter",
+    "weight": 400,
+    "heading": {
+      "family": "Inter",
+      "weight": 600
+    },
+    "body": {
+      "family": "Inter",
+      "weight": 400
+    }
+  },
+  "appearance": {
+    "default": "system"
+  },
+  "footer": {
+    "socials": {
+      "website": "https://www.borradh.io"
+    },
+    "links": [
+      {
+        "header": "Borradh",
+        "items": [
+          {
+            "label": "Dashboard",
+            "href": "https://app.borradh.io"
+          },
+          {
+            "label": "Contact support",
+            "href": "mailto:support@borradh.io"
+          }
+        ]
+      }
+    ]
   }
 }
